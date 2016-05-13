@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootswatch Carbon Blue by juzraai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bs-carbon-blue.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+
+            $('#menu').hide();
+
+            $(window).scroll(function () {
+                if ($('body').scrollTop() > 0.8 * $('header').height()) {
+                    $('#menu').fadeIn();
+                } else {
+                    $('#menu').fadeOut();
+                }
+            });
+
+            $("#menu a[href^='#'], header a[href^='#']").on('click', function (e) {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 300, function () {
+                    window.location.hash = hash;
+                });
+                $(this).blur();
+            });
+        });
+    </script>
+    <style>
+        article {
+            padding-top: 75px;
+        }
+        body {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body id="top" data-spy="scroll" data-target="#menu">
+    <header class="monster-header">
+        <div class="monster-header-row">
+            <div class="monster-header-cell">
+                <h1>Bootstrap<br><b>Carbon Blue</b></h1>
+                <h2><small>by</small><br><a href="http://juzraai.github.io/">juzraai</a></h2>
+                <p class="lead">Check out the components <a href="#typo">below <small><i class="fa fa-angle-double-down"></i></small></a></p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">BS Carbon Blue</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="#typo">Typo</a></li>
+                    <li><a href="#panels">Panels</a></li>
+                    <li><a href="#btns">Buttons</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://github.com/juzraai/bootstrap-carbon-blue/"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+
+        <article class="row" id="typo">
+            <div class="row">
+                <h1 class="col-xs-12 page-header">Typo <small>page header</small></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h1>Heading 1 <small>Small text</small></h1>
+                    <h2>Heading 2 <small>Small text</small></h2>
+                    <h3>Heading 3 <small>Small text</small></h3>
+                    <h4>Heading 4 <small>Small text</small></h4>
+                    <h5>Heading 5 <small>Small text</small></h5>
+                    <h6>Heading 6 <small>Small text</small></h6>
+                    <p class="lead">Lead text</p>
+                    <p>normal <strong>strong</strong> <em>italic</em> <u>underlined</u> <abbr title="Abbreviation">abbr</abbr> <a href="javascript:void(0)">link</a> <code>code</code> <kbd>kbd</kbd></p>
+                    <p><span class="text-muted">muted</span> <span class="text-primary">primary</span> <span class="text-success">success</span> <span class="text-info">info</span> <span class="text-warning">warning</span> <span class="text-danger">danger</span></p>
+
+                    <pre>preformatted text</pre>
+
+                </div>
+                <div class="col-md-7">
+                    <p><a href="http://www.lorumipse.hu/">Lórum ipse</a>: a hígság hat az <em>öngő csalon kvariga</em>, oxigény, zenemlés. A bamusok kataságaikat több bítállyal is forrannak lódznia: a fátlan tappankok züménye a fölgyes fohóra ajagos petézséget, a korsos nészeg pedig ezen a hajnokon <strong>kodja páfájra</strong> bugalásait. Fátlan végék szerint az oszat svég szíváron sem lehet kocsmadkára ticolnia: a kunizás saját végéből valószínűleg nem figyelő szóniát kutyognia. A rammon bontái korábban már iszkálták, hogy mintegy <u>két és fél ezer szedeges ringetést tűrűznek végre</u>, és a lökségből tűrűzik végre a seségetek által fogatott lóriumot. Ezt a szlást viszont a bamusok tődzték. A rammon kölcsökesei most ismételten redik, hogy a szépző kádlitákra ájos akoron belül milyen mentire lehet szelegyező, a 15 fogályos barára azonban nem darnázolnak polvartolyot. A pegő karsolt tegnap ronadta a fohón bítályot molyás fátlan seségetek kolásait. Ider ségső, a pegő karsolt mitánya a brán után bilázta: érdet paszlin marázta a seségetek temáját, szendíti azt a helenségnek, az ejtésekről pedig csipitést közet.</p>
+                    <blockquote>
+                        <p>Blockquote paragraph</p>
+                        <small>Blockquote small</small>
+                    </blockquote>
+                    <blockquote class="blockquote-reverse">
+                        <p>Blockquote paragraph</p>
+                        <small>Blockquote small</small>
+                    </blockquote>
+                </div>
+            </div>
+        </article>
+
+        <article id="panels">
+            <div class="row">
+                <h1 class="col-xs-12 page-header">Panels</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron">
+                        <h1>Jumbotron</h1>
+                        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="well well-lg">
+                        Large well
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="well">
+                        Default well
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="well well-sm">
+                        Small well
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Basic panel
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Panel heading</div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel primary</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel success</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel warning</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel danger</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel info</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">1</span> List group element
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span> List group element
+                        </li>
+                        <li class="list-group-item disabled">
+                            <span class="badge">3</span> Disabled element
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-group">
+                        <a href="javascript:void(0)" class="list-group-item active"><span class="badge">1</span> Active link in list group</a>
+                        <a href="javascript:void(0)" class="list-group-item"><span class="badge">2</span> Link in list group</a>
+                        <a href="javascript:void(0)" class="list-group-item"><span class="badge">3</span>Link in list group</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-group">
+                        <a href="javascript:void(0)" class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="row" id="btns">
+            <h1 class="col-xs-12 page-header">Buttons</h1>
+            <div class="col-md-12 col-lg-7">
+                <p>
+                    <a href="javascript:void(0)" class="btn btn-default">default</a>
+                    <a href="javascript:void(0)" class="btn btn-primary">primary</a>
+                    <a href="javascript:void(0)" class="btn btn-success">success</a>
+                    <a href="javascript:void(0)" class="btn btn-info">info</a>
+                    <a href="javascript:void(0)" class="btn btn-warning">warning</a>
+                    <a href="javascript:void(0)" class="btn btn-danger">danger</a>
+                    <a href="javascript:void(0)" class="btn btn-link">link</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0)" class="btn btn-default" disabled>default</a>
+                    <a href="javascript:void(0)" class="btn btn-primary" disabled>primary</a>
+                    <a href="javascript:void(0)" class="btn btn-success" disabled>success</a>
+                    <a href="javascript:void(0)" class="btn btn-info" disabled>info</a>
+                    <a href="javascript:void(0)" class="btn btn-warning" disabled>warning</a>
+                    <a href="javascript:void(0)" class="btn btn-danger" disabled>danger</a>
+                    <a href="javascript:void(0)" class="btn btn-link" disabled>link</a>
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p>
+                    <a href="javascript:void(0)" class="btn btn-lg btn-default">lg</a>
+                    <a href="javascript:void(0)" class="btn btn-default">default</a>
+                    <a href="javascript:void(0)" class="btn btn-sm btn-default">sm</a>
+                    <a href="javascript:void(0)" class="btn btn-xs btn-default">xs</a>
+                </p>
+                <p>
+                    <div class="btn-group">
+                        <a href="javascript:void(0)" class="btn btn-default">dropdown</a>
+                        <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">Action</a></li>
+                            <li><a href="javascript:void(0)">Another action</a></li>
+                            <li><a href="javascript:void(0)">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0)">Separated link</a></li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <div class="btn-group">
+                    <a href="javascript:void(0)" class="btn btn-default">1</a>
+                    <a href="javascript:void(0)" class="btn btn-default">2</a>
+                    <a href="javascript:void(0)" class="btn btn-default">3</a>
+                </div>
+                <div class="btn-group-vertical">
+                    <a href="javascript:void(0)" class="btn btn-default">1</a>
+                    <a href="javascript:void(0)" class="btn btn-default">2</a>
+                    <a href="javascript:void(0)" class="btn btn-default">3</a>
+                </div>
+            </div>
+            <p>Pagers!</p>
+        </article>
+
+    </section>
+</body>
+
+</html>

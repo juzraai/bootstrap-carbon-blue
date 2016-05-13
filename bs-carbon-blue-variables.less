@@ -1,0 +1,269 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext);
+
+@cnb-bg:                               #25292A; // background
+@cnb-br:                               #393D3E; // border
+@cnb-gr:                               #6A6C6D; // gutter text
+@cnb-t1:                               #8C8C8C; // dark text
+@cnb-t2:                               #B0B0B0; // content and symbols
+@cnb-t3:                               #C4C4C4; // attribute names
+@cnb-t4:                               #E3E3E3; // keywords
+@cnb-lb:                               #77ACC5; // strings
+@cnb-db:                               #3F5B69; // comments
+
+@gray-base:                            @cnb-bg;
+@gray-darker:                          @cnb-br;
+@gray-dark:                            @cnb-gr;
+@gray:                                 @cnb-t1;
+@gray-light:                           @cnb-t2;
+@gray-lighter:                         @cnb-t4;
+
+@surface:                              mix(white, @gray-base, 3%);
+@surface-dark:                         mix(black, @body-bg);
+@surface-border:                       transparent;
+@surface-inner-border:                 @gray-darker;
+@surface-hover:                        fade(white, 5%);
+@surface-shadow:                       0px 0px 10px 0px rgba(0,0,0,.25);
+
+@abbr-border-color:                    @gray-dark;
+
+@badge-color:                          @link-hover-color;
+@badge-link-hover-color:               @link-hover-color;
+@badge-bg:                             @surface-hover;
+@badge-active-color:                   @badge-link-hover-color;
+@badge-active-bg:                      @gray-dark;
+@badge-font-weight:                    normal;
+@badge-border-radius:                  @border-radius-large;
+
+@blockquote-small-color:               @text-muted;
+@blockquote-border-color:              @gray-dark;
+
+@body-bg:                              @gray-base;
+
+@border-radius-base:                   2px;
+@border-radius-large:                  3px;
+@border-radius-small:                  2px;
+
+@breadcrumb-bg:                        @surface;
+@breadcrumb-color:                     @text-color;
+@breadcrumb-active-color:              @link-hover-color;
+@breadcrumb-separator:                 "»";
+
+@btn-default-bg:                       @surface-hover;
+@btn-default-color:                    @link-hover-color;
+@btn-default-border:                   @surface-border;
+@btn-primary-bg:                       mix(@surface, @brand-primary);
+@btn-success-bg:                       mix(@surface, @brand-success);
+@btn-info-bg:                          mix(@surface, @brand-info);
+@btn-warning-bg:                       mix(@surface, @brand-warning);
+@btn-danger-bg:                        mix(@surface, @brand-danger);
+
+@close-color:                          @link-color !important;
+@close-text-shadow:                    none;
+
+@code-bg:                              @surface-dark;
+@code-color:                           @text-color;
+
+@component-active-color:               @link-hover-color;
+@component-active-bg:                  @surface-hover;
+
+@cursor-disabled:                      normal;
+
+@dropdown-bg:                          @surface;
+@dropdown-border:                      @surface-border;
+@dropdown-fallback-border:             @dropdown-border;
+@dropdown-divider-bg:                  @surface-inner-border;
+@dropdown-link-color:                  @link-color;
+@dropdown-link-hover-color:            @link-hover-color;
+@dropdown-link-hover-bg:               @surface-hover;
+@dropdown-link-active-color:           @dropdown-link-hover-color;
+@dropdown-link-active-bg:              @dropdown-link-hover-bg;
+@dropdown-link-disabled-color:         @gray-dark;
+@dropdown-header-color:                @text-color;
+@dropdown-caret-color:                 @text-color;
+
+@font-family-monospace:                'Inconsolata', Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:                     @font-family-monospace;
+@font-size-base:                       16px;
+@font-size-large:                      20px;
+@font-size-small:                      12px;
+@font-size-h1:                         42px;
+@font-size-h2:                         36px;
+@font-size-h3:                         31px;
+@font-size-h4:                         26px;
+@font-size-h5:                         21px;
+@font-size-h6:                         16px;
+
+@headings-color:                       @cnb-t3;
+@headings-small-color:                 @text-color;
+
+@hr-border:                            @surface-inner-border;
+
+@icon-font-path:                       "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/fonts/";
+
+@jumbotron-bg:                         @surface;
+@jumbotron-heading-color:              @headings-color;
+
+@kbd-bg:                               @surface-dark;
+@kbd-color:                            @cnb-lb;
+
+@label-default-bg:                     @surface-hover;
+
+@legend-color:                         @headings-color;
+@legend-border-color:                  @surface-inner-border;
+
+@link-color:                           @cnb-t3;
+@link-hover-color:                     white;
+@link-hover-decoration:                none;
+
+@list-group-bg:                        @surface;
+@list-group-border:                    @surface-border;
+@list-group-hover-bg:                  @surface-hover;
+@list-group-active-border:             @list-group-border;
+@list-group-active-text-color:         @link-hover-color;
+@list-group-disabled-color:            @navbar-default-link-disabled-color;
+@list-group-disabled-bg:               @list-group-bg;
+@list-group-link-color:                @link-color;
+@list-group-link-hover-color:          @link-hover-color;
+@list-group-link-heading-color:        @headings-color;
+
+@nav-link-hover-bg:                    @surface-hover;
+@nav-disabled-link-color:              @navbar-default-link-disabled-color;
+@nav-disabled-link-hover-color:        @nav-disabled-link-color;
+
+@nav-tabs-border-color:                          @surface-inner-border;
+@nav-tabs-link-hover-border-color:               @surface-border;
+@nav-tabs-active-link-hover-bg:                  @surface-hover;
+@nav-tabs-active-link-hover-color:               @link-hover-color;
+@nav-tabs-active-link-hover-border-color:        @nav-tabs-border-color;
+@nav-tabs-justified-link-border-color:           transparent;
+@nav-tabs-justified-active-link-border-color:    @nav-tabs-border-color;
+
+@navbar-default-color:                 @dropdown-header-color;
+@navbar-default-bg:                    @dropdown-bg;
+@navbar-default-border:                @dropdown-border;
+@navbar-default-link-color:            @dropdown-link-color;
+@navbar-default-link-hover-color:      @dropdown-link-hover-color;
+@navbar-default-link-hover-bg:         @dropdown-link-hover-bg;
+@navbar-default-link-active-color:     @navbar-default-link-hover-color;
+@navbar-default-link-active-bg:        @dropdown-link-hover-bg;
+@navbar-default-link-disabled-color:   @dropdown-link-disabled-color;
+@navbar-default-link-disabled-bg:      transparent;
+@navbar-default-brand-color:           @navbar-default-link-color;
+@navbar-default-brand-hover-color:     @navbar-default-link-hover-color;
+@navbar-default-brand-hover-bg:        transparent;
+@navbar-default-toggle-hover-bg:       @navbar-default-link-active-bg;
+@navbar-default-toggle-icon-bar-bg:    @navbar-default-link-color;
+@navbar-default-toggle-border-color:   @navbar-default-border;
+
+@navbar-inverse-color:                 @text-color;
+@navbar-inverse-bg:                    @surface-dark;
+@navbar-inverse-border:                transparent;
+@navbar-inverse-link-color:            @link-color;
+@navbar-inverse-link-hover-color:      @link-hover-color;
+@navbar-inverse-link-hover-bg:         mix(@navbar-inverse-bg, @body-bg);
+@navbar-inverse-link-active-color:     @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:        @navbar-inverse-link-hover-bg;
+@navbar-inverse-link-disabled-color:   @gray-dark;
+@navbar-inverse-link-disabled-bg:      transparent;
+@navbar-inverse-brand-color:           @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:     @navbar-inverse-link-hover-color;
+@navbar-inverse-brand-hover-bg:        transparent;
+@navbar-inverse-toggle-hover-bg:       @navbar-inverse-link-active-bg;
+@navbar-inverse-toggle-icon-bar-bg:    @navbar-inverse-link-color;
+@navbar-inverse-toggle-border-color:   @navbar-inverse-border;
+
+@page-header-border-color:             @hr-border;
+
+@pager-border-radius:                  @border-radius-base;
+
+@panel-bg:                             @surface;
+@panel-inner-border:                   @surface-inner-border;
+@panel-footer-bg:                      @surface-hover;
+@panel-default-text:                   @text-color;
+@panel-default-border:                 @surface-border;
+@panel-default-heading-bg:             @surface-hover;
+@panel-primary-text:                   lighten(@brand-primary, 10%);
+@panel-primary-border:                 @panel-default-border;
+@panel-primary-heading-bg:             @panel-default-heading-bg;
+@panel-success-text:                   @brand-success;
+@panel-success-border:                 @panel-default-border;
+@panel-success-heading-bg:             @panel-default-heading-bg;
+@panel-info-text:                      @brand-info;
+@panel-info-border:                    @panel-default-border;
+@panel-info-heading-bg:                @panel-default-heading-bg;
+@panel-warning-text:                   @brand-warning;
+@panel-warning-border:                 @panel-default-border;
+@panel-warning-heading-bg:             @panel-default-heading-bg;
+@panel-danger-text:                    @brand-danger;
+@panel-danger-border:                  @panel-default-border;
+@panel-danger-heading-bg:              @panel-default-heading-bg;
+
+@pre-bg:                               @surface-dark;
+@pre-color:                            @text-color;
+@pre-border-color:                     @surface-inner-border;
+
+@progress-bg:                          @surface;
+@progress-bar-color:                   white;
+
+@state-success-text:                   @brand-success;
+@state-success-bg:                     @surface;
+@state-success-border:                 @surface-border;
+
+@state-info-text:                      @brand-info;
+@state-info-bg:                        @surface;
+@state-info-border:                    @surface-border;
+
+@state-warning-text:                   @brand-warning;
+@state-warning-bg:                     @surface;
+@state-warning-border:                 @surface-border;
+
+@state-danger-text:                    @brand-danger;
+@state-danger-bg:                      @surface;
+@state-danger-border:                  @surface-border;
+
+@table-bg:                             @gray-base;
+@table-bg-accent:                      @surface;
+@table-bg-hover:                       @surface-hover;
+@table-bg-active:                      @table-bg-hover;
+@table-border-color:                   @surface-inner-border;
+
+@text-color:                           @gray;
+@text-muted:                           @gray-dark;
+
+@well-bg:                              @surface;
+@well-border:                          @surface-border;
+
+/*
+
+@input-bg:                       @gray-darker;
+@input-bg-disabled:              @gray-base;
+@input-color:                    @gray-lighter;
+@input-border:                   @gray-dark;
+@input-border-focus:             mix(@cnb-lb, @cnb-db);
+@input-color-placeholder:        @gray;
+@input-group-addon-bg:           @gray-base;
+@input-group-addon-border-color: @input-border;
+//---
+@input-bg:                       @g1; //@ge;
+@input-bg-disabled:              @g2; //@g4;
+@input-color:                    @g9; //@g2;
+@input-border:                   @g4;
+@input-border-focus:             @brand-primary; //@lb;
+@input-color-placeholder:        @g9;
+@input-group-addon-bg:           @g3; //@g8;
+@input-group-addon-border-color: @input-border;
+
+@pagination-color:                     @btn-default-color;
+@pagination-bg:                        @btn-default-bg;
+@pagination-border:                    @btn-default-border;
+@pagination-hover-color:               @btn-default-color;
+@pagination-hover-bg:                  @g3;
+@pagination-hover-border:              @pagination-border;
+@pagination-active-color:              @btn-primary-color;
+@pagination-active-bg:                 @btn-primary-bg;
+@pagination-active-border:             @btn-primary-border;
+@pagination-disabled-color:            @btn-link-disabled-color;
+@pagination-disabled-bg:               @g3;
+@pagination-disabled-border:           @g4;
+
+*/

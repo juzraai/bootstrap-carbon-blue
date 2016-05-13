@@ -1,0 +1,177 @@
+a {
+    -webkit-transition: color 150ms ease, background-color 150ms ease;
+    -moz-transition: color 150ms ease, background-color 150ms ease;
+    -ms-transition: color 150ms ease, background-color 150ms ease;
+    -o-transition: color 150ms ease, background-color 150ms ease;
+    transition: color 150ms ease, background-color 150ms ease;
+}
+
+.badge,
+.breadcrumb,
+.dropdown-menu, .jumbotron, .list-group,
+.monster-header,
+.navbar, .panel, .well {
+    -webkit-box-shadow: @surface-shadow;
+    -moz-box-shadow: @surface-shadow;
+    box-shadow: @surface-shadow;
+}
+
+.button-colors(@state, @bg, @hover-bg) {
+    .btn-@{state} {
+        background-color: @bg;
+        border-color: @btn-default-border;
+        color: @btn-default-color;
+
+        &:focus,
+        &.focus,
+        &:hover {
+            background-color: @hover-bg;
+            border-color: @btn-default-border;
+            color: @btn-default-color;
+        }
+    
+        &:active,
+        &.active,
+        .open > .dropdown-toggle& {
+            background-color: @hover-bg;
+            border-color: @btn-default-border;
+            color: @btn-default-color;
+
+            &:hover,
+            &:focus,
+            &.focus {
+                background-color: @hover-bg;
+                border-color: @btn-default-border;
+                color: @btn-default-color;
+            }
+        }
+    }
+}
+
+.button-colors(default, @btn-default-bg, @gray-darker);
+.button-colors(primary, @btn-primary-bg, @brand-primary);
+.button-colors(success, @btn-success-bg, @brand-success);
+.button-colors(info, @btn-info-bg, @brand-info);
+.button-colors(warning, @btn-warning-bg, @brand-warning);
+.button-colors(danger, @btn-danger-bg, @brand-danger);
+
+.close {
+    .opacity(1);
+    
+    &:hover,
+    &:focus {
+        color: @link-hover-color !important;
+        .opacity(1);
+    }
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: @link-hover-color;
+}
+
+.page-header {
+    margin-bottom: 50px;
+}
+
+.panel-footer,
+.panel-default .panel-heading,
+.table thead {
+    color: @headings-color;
+}
+
+.panel-primary .panel-title,
+.text-primary {
+    color: white;
+}
+
+.table-hover > tbody > tr {
+    > td:hover,
+    > th:hover,
+    &:hover > td {
+        color: @link-color;
+    }
+} 
+
+.table-row-color(@state, @color) {
+    .table > thead > tr,
+    .table > tbody > tr,
+    .table > tfoot > tr {
+        > td.@{state},
+        > th.@{state},
+        &.@{state} > td,
+        &.@{state} > th {
+            color: @color;
+        } 
+    }
+}
+
+.table-row-hover-color (@state, @color) {
+    .table-hover > tbody > tr {
+        > td.@{state}:hover,
+        > th.@{state}:hover,
+        &.@{state}:hover > td,
+        &:hover > .@{state},
+        &.@{state}:hover > th {
+            color: @color;
+        }
+    } 
+}
+
+.table-row-color(active, @headings-color);
+.table-row-color(success, @brand-success);
+.table-row-color(info, @brand-info);
+.table-row-color(warning, @brand-warning);
+.table-row-color(danger, @brand-danger);
+.table-row-hover-color(active, @link-hover-color);
+.table-row-hover-color(success, @brand-success);
+.table-row-hover-color(info, @brand-info);
+.table-row-hover-color(warning, @brand-warning);
+.table-row-hover-color(danger, @brand-danger);
+
+body {
+            text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+        }
+
+/*
+ 
+
+.pager {
+    .disabled {
+        > a,
+        > a:hover,
+        > a:focus,
+        > span {
+            background-color: @pagination-disabled-bg;
+        }
+    }
+}
+        
+*/
+
+
+// New components
+
+.monster-header {
+    background-color: @surface-dark;
+    display: table;
+    height: 100px;
+    @media screen {
+        .media-height(@i) when (@i < 21) {
+            @media (min-width: unit((@i * 100),px)) { height: unit((@i * 100),px); }
+            .media-height(@i + 1);
+        }
+        .media-height(2);
+    }    
+    height: 100vh !important;
+    text-align: center;
+    width: 100%;
+    
+    .monster-header-row {
+        display: table-row;
+    }
+    
+    .monster-header-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
