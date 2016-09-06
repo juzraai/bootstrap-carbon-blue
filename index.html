@@ -16,7 +16,7 @@
 
             $('#menu').hide();
 
-            $(window).scroll(function () {
+            $(window).scroll(function (e) {
                 if ($('body').scrollTop() > 0.8 * $('header').height()) {
                     $('#menu').fadeIn();
                 } else {
@@ -53,6 +53,11 @@
                 <h1>Bootstrap<br><b>Carbon Blue</b></h1>
                 <h2><small>by</small><br><a href="http://juzraai.github.io/">juzraai</a></h2>
                 <p class="lead">Check out the components <a href="#typo">below <small><i class="fa fa-angle-double-down"></i></small></a></p>
+            </div>
+        </div>
+        <div class="monster-header-row" style="height: 100px">
+            <div class="monster-header-cell">
+                <h1><a href="#typo"><i class="fa fa-angle-double-down"></i></a></h1>
             </div>
         </div>
     </header>
@@ -307,6 +312,7 @@
         </article>
 
     </section>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 
 </html>
